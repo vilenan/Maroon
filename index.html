@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Maroon my</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="header header--transparent">
+        <div class="header__wrapper">
+            <a class="header__logo logo" href="#" aria-label="Логотип Maroon">
+                <svg class="logo__image" width="131" height="21">
+                    <use xlink:href="image/sprite.svg#logo-icon"></use>
+                </svg>
+            </a>
+            <nav class="header__navigation navigation">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="#" class="navigation__link">Каталог</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">О нас</a></li>
+                    <li class="navigation__item"><a href="#contacts" class="navigation__link">Контакты</a></li>
+                </ul>
+            </nav>
+            <ul class="user-actions">
+                <li class="user-actions__item">
+                    <a class="user-actions__link" href="#" aria-label="Пользователь">
+                        <svg width="16" height="21">
+                            <use xlink:href="image/sprite.svg#user-icon"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="user-actions__item">
+                    <a class="user-actions__link" href="#" aria-label="Корзина">
+                        <svg width="18" height="21">
+                            <use xlink:href="image/sprite.svg#cart-icon"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="main__section about">
+            <div class="container about__wrapper">
+                <div class="about__content">
+                    <h1 class="about__title">MAROON</h1>
+                    <p class="about__description">Натуральная косметика для бережного ухода за кожей</p>
+                    <button class="about__button button">Подробнее</button>
+                </div>
+                <a class="about__link promo-card" href="#">
+                    <picture>
+                        <source media="(min-width: 1200px)" srcset="image/face-care@1x.jpg 1x, image/face-care@2x.jpg 2x">
+                        <source media="(min-width: 768px)" srcset="image/face-care-tablet@1x.jpg 1x, image/face-care-tablet@2x.jpg 2x">
+                        <img class="promo-card__image" src="image/face-care-mob@1x.jpg" srcset="image/face-care-mob@2x.jpg 2x" alt="Уход для лица">
+                    </picture>
+                    <div class="promo-card__text">
+                        <span>Уход для лица</span>
+                        <svg width="27" height="14" fill="none">
+                            <use xlink:href="image/sprite.svg#arrow-next-icon"></use>
+                        </svg>
+                    </div>
+                </a>
+                <a class="about__link promo-card" href="#">
+                    <picture>
+                        <source media="(min-width: 1200px)" srcset="image/body-care@1x.jpg 1x, image/body-care@2x.jpg 2x">
+                        <source media="(min-width: 768px)" srcset="image/body-care-tablet@1x.jpg 1x, image/body-care-tablet@2x.jpg 2x">
+                        <img class="promo-card__image" src="image/body-care-mob@1x.jpg" srcset="image/body-care-mob@2x.jpg 2x" alt="Уход для тела">
+                    </picture>
+                    <div class="promo-card__text">
+                        <span>Уход для тела</span>
+                        <svg width="27" height="14">
+                            <use xlink:href="image/sprite.svg#arrow-next-icon"></use>
+                        </svg>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section class="main__section best-sellers">
+            <div class="best-sellers__text">
+                <h2 class="best-sellers__title">Бестселлеры</h2>
+                <p class="best-sellers__text">Легендарные продукты, завоевавшие любовь наших клиентов</p>
+                <a class="best-sellers__link button" href="#" aria-label="Смотреть все">Смотреть все</a>
+            </div>
+            <div class="best-sellers__slider slider swiper-container">
+
+                <div class="slider__wrapper swiper-wrapper">
+                    <div class="slider__item product-card swiper-slide">
+                        <img class="product-card__image" src="image/product-1@1x.jpg" width="230" height="312" alt="High крем для лица">
+                        <h3 class="product-card__title">High</h3>
+                        <p class="product-card__description">крем для лица</p>
+                        <a href="#" class="product-card__link" aria-label="Подробнее">Подробнее</a>
+                    </div>
+                    <div class="slider__item product-card swiper-slide">
+                        <img class="product-card__image" src="image/product-2@1x.jpg" width="230" height="312" alt="Rest минеральная пудра">
+                        <h3 class="product-card__title">Rest</h3>
+                        <p class="product-card__description">минеральная пудра</p>
+                        <a href="#" class="product-card__link" aria-label="Подробнее">Подробнее</a>
+                    </div>
+                    <div class="slider__item product-card swiper-slide">
+                        <img class="product-card__image" src="image/product-3@1x.jpg" width="230" height="312" alt="Rose крем для лица">
+                        <h3 class="product-card__title">Rose</h3>
+                        <p class="product-card__description">крем для лица</p>
+                        <a href="#" class="product-card__link" aria-label="Подробнее">Подробнее</a>
+                    </div>
+                    <div class="slider__item product-card swiper-slide">
+                        <img class="product-card__image" src="image/product-4@1x.jpg" width="230" height="312" alt="Milk масло для тела">
+                        <h3 class="product-card__title">Milk</h3>
+                        <p class="product-card__description">кмасло для тела</p>
+                        <a href="#" class="product-card__link" aria-label="Подробнее">Подробнее</a>
+                    </div>
+                </div>
+                    <!-- If we need navigation buttons -->
+                <div class="slider__buttons-container">
+                    <div class="slider__button slider__button--prev">
+                        <svg width="27" height="14" viewBox="0 0 27 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M27 7H0.999999M0.999999 7L7.30303 1M0.999999 7L7.30303 13" stroke="#122947"/>
+                        </svg>
+                    </div>
+                    <div class="slider__button slider__button--next">
+                        <svg width="27" height="14" viewBox="0 0 27 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 7H26M26 7L19.697 1M26 7L19.697 13" stroke="#122947"/>
+                        </svg>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="main__section banner">
+            <div class="banner__content-wrapper">
+                <div class="banner__content">
+
+                    <h2 class="banner__title">Встречайте весну вместе с нами</h2>
+                    <p class="banner__description">Попробуйте новую коллекцию ухаживающих средств для лица с&nbsp;SPF защитой</p>
+                    <a href="#" class="banner__link button" aria-label="Подробнее">Подробнее</a>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="main__section individual container">
+            <div class="individual__content">
+                <h2 class="individual__title">Индивидуальный уход</h2>
+                <p class="individual__text">
+                    Не всегда очевидно, какие элементы и минералы необходимы коже, а многочисленные эксперименты с разными средствами только ухудшают ее качество.
+                </p>
+                <p class="individual__text">
+                   Заполните анкету, и мы подберем уход, подходящий именно вам, учитывая ваш образ жизни, место жительства и другие факторы.
+                </p>
+                <a href="#" class="individual__link button" aria-label="Заполнить анкету">Заполнить анкету</a>
+            </div>
+            <picture>
+                <source media="(min-width: 1200px)" srcset="image/individual@1x.jpg 1x, image/individual@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="image/individual-tablet@1x.jpg 1x, image/individual-tablet@2x.jpg 2x">
+                <img class="individual__image" src="image/individual-mob@1x.jpg" srcset="image/individual-mob@2x.jpg 2x" width="670" height="451" alt="набор продуктов">
+            </picture>
+        </section>
+
+        <section class="main__section history">
+            <div class="history__content container">
+                <p class="history__title">“Мы стремимся сделать уход за кожей доступным и приятным ритуалом для всех, кто хочет заботиться о себе и своем теле”</p>
+                <a href="#" class="history__link button" aria-label="Наша история">Наша история</a>
+            </div>
+        </section>
+
+        <section class="main__section follow container">
+            <div class="follow__gallery">
+                <img class="follow__image" src="image/join-1@1x.jpg" width="233" height="233" alt="Присоединяйтесь к нам">
+                <img class="follow__image" src="image/join-2@1x.jpg" width="233" height="233" alt="Присоединяйтесь к нам">
+                <img class="follow__image" src="image/join-3@1x.jpg" width="233" height="233" alt="Присоединяйтесь к нам">
+                <img class="follow__image" src="image/join-4@1x.jpg" width="233" height="233" alt="Присоединяйтесь к нам">
+                <img class="follow__image" src="image/join-5@1x.jpg" width="233" height="233" alt="Присоединяйтесь к нам">
+                <img class="follow__image" src="image/join-6@1x.jpg" width="233" height="233" alt="Присоединяйтесь к нам">
+
+            </div>
+            <div class="follow__content">
+                <h2 class="follow__title">Присоединяйтесь к нам</h2>
+                <p class="follow__text">Подпишитесь на наш аккаунт @marooncare и узнавайте о новиках и акциях первыми</p>
+                <a href="#" class="follow__link button" aria-label="Подписаться">Подписаться</a>
+            </div>
+
+        </section>
+
+        <section class="main__section contacts container" id="contacts">
+            <div class="contacts__content">
+                <h2 class="contacts__title">Контакты</h2>
+                <ul class="contacts__list">
+                    <li class="contacts__item">
+                        <h3>Адрес</h3>
+                        <p>Москва</p>
+                        <p>ул. Большая Полянка, 19</p>
+                    </li>
+                    <li class="contacts__item">
+                        <h3>Телефон</h3>
+                        <a class="contacts__link" href="tel:+79264035914" aria-label="Телефон">+7 (926) 403-59-14</a>
+                    </li>
+                    <li class="contacts__item">
+                        <h3>E-mail</h3>
+                        <a class="contacts__link" href="mailto:info@maroon.ru" aria-label="E-mail">info@maroon.ru</a>
+                    </li>
+                </ul>
+                <ul class="socials">
+                    <li class="socials__item">
+                        <a href="#" class="socials__link" aria-label="Facebook">
+                            <svg width="11" height="18">
+                                <use xlink:href="image/sprite.svg#facebook-icon"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="socials__item">
+                        <a href="#" class="socials__link" aria-label="Instagram">
+                            <svg width="20" height="20">
+                                <use xlink:href="image/sprite.svg#instagram-icon"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="socials__item">
+                        <a href="#" class="socials__link" aria-label="Twitter">
+                            <svg width="20" height="17">
+                                <use xlink:href="image/sprite.svg#twitter-icon"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="contacts__map">
+                <div style="position:relative;overflow:hidden;">
+                    <a href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a>
+                    <a href="https://yandex.ru/maps/213/moscow/house/ulitsa_bolshaya_polyanka_19/Z04YcAZoS0MDQFtvfXtyeXRjYA==/?ll=37.618264%2C55.738804&utm_medium=mapframe&utm_source=maps&z=17.22" style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица Большая Полянка, 19 — Яндекс Карты</a>
+                    <iframe src="https://yandex.ru/map-widget/v1/?ll=37.618264%2C55.738804&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjcwMTU4ORJI0KDQvtGB0YHQuNGPLCDQnNC%2B0YHQutCy0LAsINGD0LvQuNGG0LAg0JHQvtC70YzRiNCw0Y8g0J%2FQvtC70Y%2FQvdC60LAsIDE5IgoNGnkWQhWJ9F5C&utm_source=main_stripe_big&z=17.22" width="670" height="422" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+                </div>
+<!--                <div class="contacts__map-wrapper map" id="map" data-center="59.93791367332671,30.32282782142634" data-zoom="17" data-hint-content="" data-balloon-content=""></div>-->
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer__content-wrapper">
+            <div class="footer__content container">
+                <a class="logo" href="#">
+                    <img src="image/icons/logo-icon.svg" width="131" height="21" alt="Логотип Maroon">
+                </a>
+                <ul class="footer__menu">
+                    <li class="footer__item"><a class="footer__link" href="#">Каталог</a></li>
+                    <li class="footer__item"><a class="footer__link" href="#">О нас</a></li>
+                    <li class="footer__item"><a class="footer__link" href="#">Магазины</a></li>
+                    <li class="footer__item"><a class="footer__link" href="#contacts">Контакты</a></li>
+                </ul>
+                <ul class="footer__socials socials">
+                    <li class="socials__item">
+                        <a href="#" class="socials__link" aria-label="Facebook">
+                            <svg width="11" height="18">
+                                <use xlink:href="image/sprite.svg#facebook-icon"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="socials__item">
+                        <a href="#" class="socials__link" aria-label="Instagram">
+                            <svg width="20" height="20">
+                                <use xlink:href="image/sprite.svg#instagram-icon"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="socials__item">
+                        <a href="#" class="socials__link" aria-label="Twitter">
+                            <svg width="20" height="17">
+                                <use xlink:href="image/sprite.svg#twitter-icon"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__copyright">
+            <div class="footer__copyright-wrapper container">
+                <p>Maroon &copy; 2020 Все права защищены</p>
+                <p><a class="footer__copyright-link" href="#">Политика конфиденциальности</a></p>
+            </div>
+
+        </div>
+
+    </footer>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
