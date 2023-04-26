@@ -1,0 +1,32 @@
+.slider__item {
+  width: 312px;
+}
+
+.slider__buttons-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 20px 98px 0 0;
+}
+
+.slider__button {
+  display: flex;
+  cursor: pointer;
+  outline: 0;
+  transition: 0.2s;
+  width: 26px;
+  height: 12px;
+
+  &:hover,
+  &:active,
+  &:focus {
+    opacity: 0.5;
+    transition: 0.2s;
+  }
+
+  &:not(:first-child) {
+    margin-left: 32px;
+  }
+}
+
+

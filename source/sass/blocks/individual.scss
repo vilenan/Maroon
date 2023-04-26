@@ -1,0 +1,47 @@
+.individual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.individual__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #f4f1ed;
+  max-width: 670px;
+  margin-right: -170px;
+  max-height: 583px;
+  padding: 100px 220px 100px 100px;
+}
+
+.individual__title {
+  font-family: 'Raleway', 'Arial', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 130%;
+  margin: 0 0 40px 0;
+}
+
+.individual__text {
+  margin: 0;
+
+  &:not(:last-of-type) {
+    margin-bottom: 10px;
+  }
+}
+
+.individual picture {
+  display: flex;
+}
+
+.individual__image {
+  width: 670px;
+  height: 451px;
+  flex-shrink: 0;
+}
+
+.individual__link {
+  margin-top: 38px;
+}

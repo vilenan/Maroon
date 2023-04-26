@@ -1,0 +1,24 @@
+.user-actions {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0 0 0 51px;
+}
+
+.user-actions__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.user-actions__link {
+  display: flex;
+  outline: 0;
+  transition: 0.2s;
+
+  &:hover,
+  &:focus,
+  &:active {
+    opacity: 0.5;
+    transition: 0.2s;
+  }
+}
+

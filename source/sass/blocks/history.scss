@@ -1,0 +1,25 @@
+.history {
+  background-image: url("../image/history-background@1x.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #f1efeb;
+  min-height: 433px;
+}
+
+.history__content {
+  padding-top: 120px;
+  width: 760px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.history__title {
+  margin: 0 0 50px 0;
+  font-family: 'Raleway', 'Arial', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 125%;
+  text-align: center;
+}

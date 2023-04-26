@@ -1,0 +1,31 @@
+.header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: #fff;
+  border-bottom: 1px solid #dbdce0;
+  z-index: 30;
+  transition: 0.3s;
+
+  &--transparent {
+    background: transparent;
+    border-color: transparent;
+  }
+
+  &--colored {
+    background-color: #fff;
+    border-color: #dbdce0;
+  }
+}
+
+.header__wrapper {
+  width: 100%;
+  padding: 40px 98px;
+  display: flex;
+  align-items: center;
+}
+
+.header__navigation {
+  margin-left: auto;
+}

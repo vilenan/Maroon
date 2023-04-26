@@ -1,0 +1,74 @@
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  color: #122947;
+  font-family: "Mplus", "Arial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 145%;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+picture {
+  display: flex;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  margin:  0;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.button {
+  display: block;
+  font-family: 'Mplus', 'Arial', sans-serif;
+  font-weight: 500;
+  color: #122947;
+  background-color: transparent;
+  padding: 13px 27px;
+  border: 1px solid #b3bac1;
+  border-radius: 2px;
+  transition: opacity 0.2s;
+  appearance: none;
+  cursor: pointer;
+  outline: none;
+
+  &:active,
+  &:focus,
+  &:hover {
+    background-color: #fff;
+    opacity: 0.5;
+    transition: 0.2s;
+  }
+}
+
