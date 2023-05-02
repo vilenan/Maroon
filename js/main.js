@@ -39,15 +39,56 @@ for (let anchor of anchors) {
 }
 
 const header = document.querySelector('.header');
+const menuButton = document.querySelector('.header__menu-button');
+const navigation = document.querySelector('.navigation');
+const overlay = document.querySelector('.navigation__overlay');
 
-window.addEventListener('scroll', headerScrollHandler);
+function closeMenu() {
+    menuButton.removeEventListener('click', closeMenu);
+    menuButton.addEventListener('click', openMenu);
+    overlay.removeEventListener('click', closeMenu);
+    document.removeEventListener(`keydown`, onEscPress);
 
+    menuButton.classList.remove('header__menu-button--open');
+    navigation.classList.remove('navigation--open');
+    document.body.classList.remove(`body--no-scroll`);
+    if (!isScrolled()){
+        header.classList.remove('header--colored');
+    }
+}
+
+function openMenu() {
+    menuButton.removeEventListener('click', openMenu);
+    menuButton.addEventListener('click', closeMenu);
+    overlay.addEventListener('click', closeMenu);
+    document.addEventListener(`keydown`, onEscPress);
+
+    document.body.classList.add(`body--no-scroll`);
+    header.classList.add('header--colored');
+    menuButton.classList.add('header__menu-button--open');
+    navigation.classList.add('navigation--open');
+}
+
+function onEscPress(evt) {
+    if (evt.keyCode === 27) {
+        closeMenu()
+    }
+}
+
+function isScrolled() {
+    const pxAmount = 0
+    const scrollTop = document.documentElement.scrollTop
+    return scrollTop > pxAmount
+
+}
 function headerScrollHandler() {
     const scrollTop = window.scrollY;
-
     if (scrollTop) {
         header.classList.add('header--colored');
     } else {
         header.classList.remove('header--colored');
     }
 }
+
+window.addEventListener('scroll', headerScrollHandler);
+closeMenu();
