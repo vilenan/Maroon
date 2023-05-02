@@ -2,11 +2,19 @@
   list-style: none;
   display: flex;
   padding: 0;
-  margin: 0 0 0 51px;
+  margin: 0;
+
+   @media (min-width: $desktop-width) {
+     margin: 0 0 0 51px;
+   }
 }
 
 .user-actions__item:not(:last-child) {
-  margin-right: 30px;
+  margin-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 30px;
+  }
 }
 
 .user-actions__link {
@@ -19,6 +27,13 @@
   &:active {
     opacity: 0.5;
     transition: 0.2s;
+  }
+}
+
+.user-actions__link svg {
+  @media (max-width: $mobile-width-only){
+    width: 13px;
+    height: 16px;
   }
 }
 

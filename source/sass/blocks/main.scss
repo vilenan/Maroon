@@ -1,3 +1,7 @@
 .main__section {
-  margin-bottom: 140px;
+  margin-bottom: 80px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 140px;
+  }
 }

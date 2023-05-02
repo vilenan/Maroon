@@ -11,6 +11,7 @@ const browserSync = require('browser-sync').create();
 const csso = require('postcss-csso');
 const webp = require('gulp-webp');
 const del = require('del');
+const svgstore = require('gulp-svgstore');
 
 const paths = {
     styles: 'source/sass/style.scss',
@@ -65,10 +66,23 @@ function minifyImages() {
 exports.minifyImages = minifyImages;
 
 function createWebp() {
-    return src('source/image/**/*.{jpg, png}')
+    return src('build/image/**/*.{jpg, png}')
         .pipe(webp({ quality: 90 }))
         .pipe(dest('build/image'))
 }
+
+//Sprite
+
+const sprite = () => {
+    return src("source/image/icons/*.svg")
+        .pipe(svgstore({
+            inlineSvg: true
+        }))
+        .pipe(rename("sprite.svg"))
+        .pipe(dest("build/image"));
+}
+
+exports.sprite = sprite;
 
 //Fonts
 function copyFonts() {
@@ -118,6 +132,7 @@ exports.default = series(
     copyImages,
     parallel(
         styles,
+        sprite,
         scripts,
         minifyHtml,
         createWebp,
@@ -135,6 +150,7 @@ exports.build = series(
     parallel(
         styles,
         scripts,
+        sprite,
         minifyHtml,
         createWebp,
     ),

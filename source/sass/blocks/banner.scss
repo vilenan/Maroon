@@ -1,36 +1,90 @@
 .banner {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: flex-end;
-  background-image: url("../image/banner-background@1x.jpg");
+  background-image: url("../image/banner-background-mob@1x.jpg");
   background-color: #f1efeb;
-  min-height: 400px;
+  min-height: 562px;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    background-image: url("../image/banner-background-tablet@1x.jpg");
+    background-color: #f1efeb;
+    min-height: 432px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left center;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-image: url("../image/banner-background@1x.jpg");
+    background-color: #f1efeb;
+    min-height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 
 .banner__content-wrapper {
-  width: 50%;
+  padding: 0 15px;
+  margin-bottom: 60px;
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+    padding: 0;
+    margin: 0;
+  }
 }
 
 .banner__content {
-  padding-left: 115px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 15px;
+    width: 50%;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 115px;
+  }
 }
 
 .banner__title {
   font-family: 'Raleway', 'Arial', sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 32px;
+  font-size: 28px;
   line-height: 125%;
   width: 300px;
-  margin: 0 0 30px 0;
+  margin: 0 0 25px 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 32px;
+    line-height: 125%;
+    margin: 0 0 30px 0;
+  }
 }
 
 .banner__description {
-  margin: 0 0 40px 0;
+  margin: 0 0 30px 0;
   width: 300px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 40px 0;
+  }
 }

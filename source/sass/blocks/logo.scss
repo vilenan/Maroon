@@ -2,6 +2,13 @@
   display: flex;
   outline: 0;
   transition: 0.2s;
+  width: 85px;
+  height: 13px;
+
+  @media (min-width: $tablet-width) {
+    width: 131px;
+    height: 21px;
+  }
 
   &:active,
   &:focus,

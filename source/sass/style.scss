@@ -1,13 +1,14 @@
+@import "global/variables.scss";
 @import "global/normalize";
 @import "global/fonts.scss";
 @import "global/global.scss";
 @import "global/swiper.scss";
-
 @import "blocks/header.scss";
 @import "blocks/logo.scss";
 @import "blocks/user-actions.scss";
 @import "blocks/main.scss";
 @import "blocks/about.scss";
+@import "blocks/promo-card";
 @import "blocks/product-card.scss";
 @import "blocks/navigation.scss";
 @import "blocks/best-sellers.scss";

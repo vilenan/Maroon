@@ -3,10 +3,14 @@
 }
 
 .slider__buttons-container {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  margin: 20px 98px 0 0;
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 20px 98px 0 0;
+  }
 }
 
 .slider__button {

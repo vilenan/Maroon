@@ -8,16 +8,18 @@
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
-<body>
+<body class="body">
 
     <header class="header header--transparent">
         <div class="header__wrapper">
+            <button class="header__menu-button" aria-label="Меню"></button>
             <a class="header__logo logo" href="#" aria-label="Логотип Maroon">
                 <svg class="logo__image" width="131" height="21">
                     <use xlink:href="image/sprite.svg#logo-icon"></use>
                 </svg>
             </a>
             <nav class="header__navigation navigation">
+                <div class="navigation__overlay"></div>
                 <ul class="navigation__list">
                     <li class="navigation__item"><a href="#" class="navigation__link">Каталог</a></li>
                     <li class="navigation__item"><a href="#" class="navigation__link">О нас</a></li>
@@ -49,19 +51,19 @@
             <div class="container about__wrapper">
                 <div class="about__content">
                     <h1 class="about__title">MAROON</h1>
-                    <p class="about__description">Натуральная косметика для бережного ухода за кожей</p>
+                    <p class="about__description">Натуральная косметика для&nbsp;бережного ухода за кожей</p>
                     <button class="about__button button">Подробнее</button>
                 </div>
                 <a class="about__link promo-card" href="#">
                     <picture>
                         <source media="(min-width: 1200px)" srcset="image/face-care@1x.jpg, image/face-care@2x.jpg 2x">
                         <source media="(min-width: 768px)" srcset="image/face-care-tablet@1x.jpg, image/face-care-tablet@2x.jpg 2x">
-                        <img class="promo-card__image" src="image/face-care-mob@1x.jpg" srcset="image/face-care-mob@2x.jpg 2x" alt="Уход для лица">
+                        <img class="promo-card__image" src="image/face-care-mob@1x.jpg" srcset="image/face-care-mob@2x.jpg 2x" width="330" height="422" alt="Уход для лица">
                     </picture>
                     <div class="promo-card__text">
                         <span>Уход для лица</span>
-                        <svg width="27" height="14" fill="none">
-                            <use xlink:href="image/sprite.svg#arrow-next-icon"></use>
+                        <svg class="promo-card__icon" width="27" height="14" fill="none">
+                            <use xlink:href="image/sprite.svg#arrow-link-icon"></use>
                         </svg>
                     </div>
                 </a>
@@ -69,12 +71,12 @@
                     <picture>
                         <source media="(min-width: 1200px)" srcset="image/body-care@1x.jpg, image/body-care@2x.jpg 2x">
                         <source media="(min-width: 768px)" srcset="image/body-care-tablet@1x.jpg, image/body-care-tablet@2x.jpg 2x">
-                        <img class="promo-card__image" src="image/body-care-mob@1x.jpg" srcset="image/body-care-mob@2x.jpg 2x" alt="Уход для тела">
+                        <img class="promo-card__image" src="image/body-care-mob@1x.jpg" srcset="image/body-care-mob@2x.jpg 2x" width="330" height="422" alt="Уход для тела">
                     </picture>
                     <div class="promo-card__text">
                         <span>Уход для тела</span>
-                        <svg width="27" height="14">
-                            <use xlink:href="image/sprite.svg#arrow-next-icon"></use>
+                        <svg class="promo-card__icon" width="27" height="14">
+                            <use xlink:href="image/sprite.svg#arrow-link-icon"></use>
                         </svg>
                     </div>
                 </a>
@@ -82,7 +84,7 @@
         </section>
 
         <section class="main__section best-sellers">
-            <div class="best-sellers__text">
+            <div class="best-sellers__content">
                 <h2 class="best-sellers__title">Бестселлеры</h2>
                 <p class="best-sellers__text">Легендарные продукты, завоевавшие любовь наших клиентов</p>
                 <a class="best-sellers__link button" href="#" aria-label="Смотреть все">Смотреть все</a>
@@ -130,6 +132,7 @@
                 </div>
 
             </div>
+            <a class="best-sellers__link-mobile button" href="#" aria-label="Смотреть все">Смотреть все</a>
         </section>
 
         <section class="main__section banner">
@@ -144,7 +147,7 @@
             </div>
         </section>
 
-        <section class="main__section individual container">
+        <section class="main__section individual">
             <div class="individual__content">
                 <h2 class="individual__title">Индивидуальный уход</h2>
                 <p class="individual__text">
@@ -180,7 +183,7 @@
 
             </div>
             <div class="follow__content">
-                <h2 class="follow__title">Присоединяйтесь к нам</h2>
+                <h2 class="follow__title">Присоединяйтесь к&nbsp;нам</h2>
                 <p class="follow__text">Подпишитесь на наш аккаунт @marooncare и узнавайте о новиках и акциях первыми</p>
                 <a href="#" class="follow__link button" aria-label="Подписаться">Подписаться</a>
             </div>

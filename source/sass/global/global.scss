@@ -10,8 +10,13 @@ html {
   font-family: "Mplus", "Arial", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 18px;
-  line-height: 145%;
+  font-size: 16px;
+  line-height: 140%;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 145%;
+  }
 }
 
 a {
@@ -40,18 +45,35 @@ picture {
   overflow: hidden;
 }
 
-body {
+.body {
   margin:  0;
+
+  &--no-scroll {
+    overflow: hidden;
+  }
 }
 
+
 .container {
-  max-width: 1170px;
-  margin: 0 auto;
+  width: auto;
+  padding: 0 15px;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    padding: 0 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1170px;
+    margin: 0 auto;
+  }
 }
 
 .button {
   display: block;
   font-family: 'Mplus', 'Arial', sans-serif;
+  font-size: 14px;
+  line-height: 140%;
   font-weight: 500;
   color: #122947;
   background-color: transparent;
@@ -62,6 +84,11 @@ body {
   appearance: none;
   cursor: pointer;
   outline: none;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 140%;
+  }
 
   &:active,
   &:focus,
