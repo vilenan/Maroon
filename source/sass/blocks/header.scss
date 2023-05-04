@@ -46,7 +46,7 @@
   display: block;
   transition: opacity 0.2s;
   appearance: none;
-  background-image: url("../../image/icons/burger-icon.svg");
+  background-image: url("../image/icons/burger-icon.svg");
   background-repeat: no-repeat;
   background-position: center;
   border: none;
@@ -71,7 +71,7 @@
   }
 
   &--open {
-    background-image: url("../../image/icons/close-icon.svg");
+    background-image: url("../image/icons/close-icon.svg");
     background-size: 14px 14px;
 
     @media (min-width: $tablet-width) {
