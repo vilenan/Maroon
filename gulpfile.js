@@ -66,7 +66,7 @@ function minifyImages() {
 exports.minifyImages = minifyImages;
 
 function createWebp() {
-    return src('build/image/**/*.{jpg, png}')
+    return src('build/image/**/*.{jpg,png}')
         .pipe(webp({ quality: 90 }))
         .pipe(dest('build/image'))
 }
